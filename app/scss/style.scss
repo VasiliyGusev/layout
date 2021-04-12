@@ -1,4 +1,5 @@
 $mainColor: #f16d7f;
+
 html {
     box-sizing: border-box;
 }
@@ -17,9 +18,9 @@ body {
 
 a {
     display: block;
-    width: 100%;
+    // width: 100%;
     text-decoration: none;
-    color: #6F6E6E;
+    color: #000;
 }
 
 ul {
@@ -48,7 +49,6 @@ ul {
     display: flex;
     align-items: center;
 }
-
 .logo__text {
     font-weight: 400;
     font-size: 27px;
@@ -61,7 +61,10 @@ ul {
     
 }
 }
-
+.main__logo img{
+    width: 59px;
+    height: 51px;
+}
 
 .header__search {
     height: 38px;
@@ -73,11 +76,11 @@ ul {
 .search__summary {
     display: block;
     outline: none;
-    padding: 2px 3px 2px 15px;
+    padding: 2px 0 2px 15px;
     transition: .3s ease;
     color: #222222;
     font-size: 14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height: 32px;
 
     &:hover{
@@ -91,21 +94,21 @@ ul {
         padding: 5px;
         outline: none;
     }
-    &-browse[open] > .search__summary::after {
-        content: '\25BC';
-        outline: none;
-        padding-left: 3px;
-        padding-top: 8px;
-    }
+    
 }
-
+.header__search-browse[open] > .search__summary::after {
+    content: '\25BC';
+    outline: none;
+    padding-left: 3px;
+    padding-top: 8px;
+}
 
 .search__button {
     background: transparent;
     border: none;
     outline: none;
     height: 36px;
-    width: 41px;
+    width: 44px;
     cursor: pointer;
     color: #aaa;
     position: relative;
@@ -171,7 +174,7 @@ ul {
 }
 .search__input {
     max-width: 280px;
-    padding: 11px 87px 10px 15px;
+    padding: 9px 87px 9px 15px;
     outline: none;
     border: none;
 }
@@ -179,7 +182,7 @@ ul {
     margin-right: 26px;
 }
 .header__profile{
-    padding: 11px 30px 12px 20px;
+    padding: 9px 30px 9px 20px;
     cursor: pointer;
     background-color: #f8f8f8;
     border: 1px solid #ccc;
@@ -199,6 +202,7 @@ ul {
         background-image: url(../img/icon/arrowDown.png);
         position: absolute;
         margin: 9px;
+        top: 7px;
     } 
     &:hover:after{
         content: "";
@@ -217,7 +221,7 @@ ul {
     align-items: center;
     text-transform: uppercase;
     font-weight: 700;
-
+    margin: 0;
     &-mar{
         margin-left: 45px;
     }
@@ -234,7 +238,8 @@ ul {
 
 .main__list{
     position: relative;
-
+    font-weight: 700;
+    color: #222222;
     &:hover .drop__menu{
         display: flex;
     }
@@ -262,6 +267,15 @@ ul {
         border-top: 1px solid #e8e8e8;
         border-left: 1px solid #e8e8e8;
     }
+    &-women{
+        left: -180px;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 180px;
+        }
+    }
     &-kids{
         left: -280px;
         &::before{
@@ -273,12 +287,17 @@ ul {
     }
     &-accoseriese{
         left: -300px;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            left: 300px;
+        }
     }
     &::before{
         content: '';
         display: block;
         position: absolute;
-        left: 300px;
     }
     &-featured{
         left: -450px;
@@ -291,7 +310,7 @@ ul {
     }
     &-hot{
         left: -550px;
-        &t::before{
+        &::before{
             content: '';
             display: block;
             position: absolute;
@@ -357,26 +376,26 @@ Start Top content */
             width: 14px;
             background-color: $mainColor;
             left: 0px;
-            top: 9px;
+            top: -10px;
         }
     }
 }
 
 .top__title{
     font-weight: 900;
-    line-height: 65px;
+    line-height: 25px;
     font-size: 60px;
 }
 .main__text{
     font-weight: 900;
-    line-height: 45px;
+    line-height: 0px;
     font-size: 40px;
     & span{
         color: $mainColor;
     }
 }
 .top__img{
-    object-position: -213px -50px;
+    object-position: -170px -50px;
 }
 
 /* End Top content
@@ -426,15 +445,17 @@ Start products */
     margin-top: 100px;
 }
 .products__title{
+    display: block !important;
+    justify-content: center;
     text-align: center;
     margin-bottom: 20px;
     & h3{
-        line-height: 45px;
+        line-height: 53px;
         font-size: 30px;
         font-weight: 700;
     }
     & p{
-        line-height: 20px;
+        line-height: 54px;
         font-size: 14px;
         font-weight: 400;
         color: #9f9f9f;
@@ -446,43 +467,64 @@ Start products */
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.prod__img{
+    width: 100%;
+}
 .products__item{
-    margin-top: 40px;
+    margin-bottom: 40px;
     &-text{
-        padding: 20px 0 20px 15px;
         font-size: 13px;
         text-transform: uppercase;
-        font-weight: 900;
+        font-weight: 400;
+        line-height: 30px;
     }
     &-price{
-        padding: 0 0 25px 15px;
         color:$mainColor;
         font-size: 16px;
         font-weight: 900;
+        line-height: 30px;
+        margin-bottom: 21px;
     }
     &:hover{
         box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.1);
     }
-    &:hover .product__hover-img{
-        opacity: 1;
+    &:hover .prod__img{
+        filter: brightness(50%);
+    }
+    &:hover .product__hover{
+        display: flex;
     }
 }
-
-.product__content{
+.products__img{
     position: relative;
 }
-.product__hover-img{
+.product__hover{
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    overflow: hidden;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: .3s ease;
+    top: 98px;
+    display: none;
+    justify-content: center;
 }
 
+.product__hover-link{
+    display: flex;
+    border: 1px solid #fff;
+    line-height: 1px;
+    padding: 7px;
+    color: #fff;
+    align-items: center;
+}
+.product__hover-link:hover{
+    box-shadow: 0px 0px 10px #fff;
+}
+.product__hover-text{
+    margin-left: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+.product__text{
+    padding-left: 15px;
+}
 .products__bottom-text{
     text-align: center;
     margin-top: 30px;
@@ -499,8 +541,7 @@ Start products */
     border: 1px solid #ccc;
     position: relative;
     transition: .3s ease;
-}
-.bottom__button-prod::after{
+    &::after{
     content: "";
     position: absolute;
     background-image: url(../img/icon/longArrowRightBlack.png);
@@ -509,16 +550,20 @@ Start products */
     top: 25px;
     right: 20px;
     opacity: .5;
+    }
+    &:hover{
+        color: #fff;
+        background-color: $mainColor;
+        border: 1px solid transparent;
+        &:after{
+            content: "";
+            background-image: url(../img/icon/longArrowRight.png);
+        }
+    }
+    
 }
-.bottom__button-prod:hover{
-    color: #fff;
-    background-color: $mainColor;
-    border: 1px solid transparent;
-}
-.bottom__button-prod:hover:after{
-    content: "";
-    background-image: url(../img/icon/longArrowRight.png);
-}
+
+
 
 /* End products
 Start conditions */
@@ -540,14 +585,14 @@ Start conditions */
         font-weight: 700;
         & p{
             font-size: 44px;
-            line-height: 45px;
+            line-height: 40px;
         }
         & span{
             color: $mainColor;
         }
         & h3{
             font-size: 26px;
-            line-height: 27px;
+            line-height: 40px;
         }
     }
     &__terms{
@@ -556,21 +601,27 @@ Start conditions */
     }
     &__terms{
         height: 529px;
-        padding: 0 45px 0 112px;
+        padding: 0 50px 0 112px;
     }
     &__terms-cont h4{
         margin-top: 55px;
         font-size: 20px;
-        line-height: 25px;
+        line-height: 0;
         font-weight: 700;
         
     }
     &__terms-cont p{
-        margin-top: 5px;
         font-size: 14px;
         line-height: 24px;
         font-weight: 100;
+        margin-top: 20px;
     }
+}
+.term__title{
+    color: #fbfbfb;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
 }
 
 .term__title-1,
@@ -586,7 +637,7 @@ Start conditions */
     background-repeat: no-repeat;
     height: 40px;
     width: 46px;
-    top: -5px;
+    top: -18px;
     left: -70px;
 }
 .term__title-1::before{
@@ -635,6 +686,7 @@ Start subscribe */
             font-size: 22px;
             line-height: 25px;
             font-weight: 400;
+            letter-spacing: 0.35px;
         }
         & p{
             text-transform: uppercase;
@@ -654,7 +706,7 @@ Start subscribe */
         /* left: 0; */
         outline: none;
         border: none;
-        padding: 15px 82px 15px 30px;
+        padding: 15px 112px 15px 30px;
         border-radius: 50px 0 0 50px;
         font-size: 14px;
         font-weight: 400;
@@ -681,20 +733,19 @@ Start subscribe */
 }
 
 .author__foto{
-    margin-right: 28px;
     &-img{
         border-radius: 50%;
         size: 100%
     }
 }
-
+.author__text{
+    margin-left: 28px;
+}
 .author__text p:first-child{
    font-style: italic;
    font-weight: 700;
-   margin-right: 53px;
-   padding-top: 20px;
    font-size: 16px;
-   line-height: 26px;
+   line-height: 20px;
    margin-bottom: 20px;
 }
 .author__text h4{
@@ -736,7 +787,7 @@ Start footer */
     height: 200px;
     width: 420px;
     & p{
-        margin-top: 25px;
+        margin-top: 28px;
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
@@ -849,9 +900,10 @@ Start products */
     justify-content: space-between;
     text-align: center;
     margin-top: 90px;
+    padding-bottom: 20px;
     border-bottom: 1px solid #eaeaea;
 }
-.products__title{
+.products__title-shop{
     display: flex;
     & h4{
         color: #222222;
@@ -861,7 +913,7 @@ Start products */
         text-transform: uppercase;
     }
     & h4+h4{
-        margin-left: 78px;
+        margin-left: 80px;
     }
 }
 
@@ -899,7 +951,7 @@ Start products */
     font-weight: 700;
     color: #6f6e6e;
     font-size: 13px;
-    line-height: 20px;
+    line-height: 15px;
     margin-left: 21px;
     & span{
         font-weight: 300;
@@ -908,7 +960,7 @@ Start products */
 }
 
 .product_content-value p{
-    margin-right: 125px;
+    margin-right: 109px;
 }
 .product__value2 p{
     padding: 10px 24px;
@@ -987,7 +1039,7 @@ Start Shipping */
         padding-left: 236px;
     }
     &__input-state{
-        padding: 16px 165px 18px 17px;
+        padding: 16px 210px 18px 17px;
         border: 1px solid #eaeaea;
         color: #b1b1b1;
         font-size: 13px;
@@ -997,7 +1049,7 @@ Start Shipping */
         margin-top: 20px;
     }
     &__input-zip{
-        padding: 16px 165px 18px 17px;
+        padding: 16px 210px 18px 17px;
         border: 1px solid #eaeaea;
         color: #b1b1b1;
         font-size: 13px;
