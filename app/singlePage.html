@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>SinglePage</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
@@ -23,7 +23,7 @@
                         <a href="#">
                             <img src="img/logo.svg" alt="logo">
                         </a>
-                        <a class="logo__text" href="#">
+                        <a class="logo__text" href="index.html">
                             <p>BRAN<span>D</span></p>
                         </a>
                     </div>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="header__top-right">
                     <div class="shop__cart">
-                        <a href="shopping.html">
+                        <a href="#">
                             <img src="img/icon/basket.svg" alt="basket">
                         </a>
                     </div>
@@ -87,7 +87,7 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="main__list">
-                            <a target="_blank" class="munu__link" href="#">
+                            <a class="munu__link" href="index.html">
                                 Home
                             </a>
                             <div class="drop__menu">
@@ -199,10 +199,10 @@
                             </div>
                         </li>
                         <li class="main__list menu__list-mar">
-                            <a target="_blank" class="munu__link" href="singlePage.html">
+                            <a target="_blank" class="munu__link" href="#">
                                 Women
                             </a>
-                            <div class="drop__menu drop__menu-women">
+                            <div class="drop__menu">
                                 <div class="drop__menu-inner">
                                     <h3 class="drop__title">
                                         Women
@@ -233,7 +233,7 @@
                                         Women
                                     </h3>
                                     <ul>
-                                        <li><a class="drop__menu-link" href="singlePage.html">Dresses</a></li>
+                                        <li><a class="drop__menu-link" href="#">Dresses</a></li>
                                         <li><a class="drop__menu-link" href="#">Tops</a></li>
                                         <li><a class="drop__menu-link" href="#">Sweaters/Knits</a></li>
                                     </ul>
@@ -423,8 +423,8 @@
                             </div>
                         </li>
                         <li class="main__list menu__list-mar">
-                            <a target="_blank" class="munu__link" href="singlePage.html">
-                                single page.html
+                            <a target="_blank" class="munu__link" href="#">
+                                Hot Deals
                             </a>
                             <div class="drop__menu drop__menu-hot">
                                 <div class="drop__menu-inner">
@@ -484,285 +484,190 @@
         </div>
     </header>
 
-    <section class="top__content">
+    <section class="arrivals">
         <div class="container">
-            <div class="top__text">
-                <div class="top__text-inner">
-                    <h1 class="top__title">
-                        THE BRAND
-                    </h1>
-                    <div class="main__text">
-                        OF LUXERIOUS <span>FASHION</span>
-                    </div>
+            <div class="arrivals__inner">
+                <div class="arrivals__title">
+                    <h1 id="arrivals__titile">New Arrivals</h1>
                 </div>
-            </div>
-            <div class="top__image">
-                <img class="top__img" src="img/topMen.png" alt="topMen">
-            </div>
-        </div>
-    </section>
-
-    <main class="categories">
-        <div class="container">
-            <div class="categories__inner">
-                <div class="catecories__left">
-                    <div class="catecories__left-top">
-                        <img class="image__left-top" src="img/CatLefTop.jpg" alt="CatLefTop">
-                        <div class="categori__text-left-top">
-                            <a target="_blank" href="#">
-                                <p>hOT dEAL</p>
-                                <h2>FOR MEN</h2>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="catecories__left-bottom">
-                        <img class="image__left-bottom" src="img/CatLefBott.jpg" alt="CatLefBott">
-                        <div class="categori__text-left-bottom">
-                            <a target="_blank" href="#">
-                                <p>LUXIROUS & trendy</p>
-                                <h2>ACCESORIES</h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="categories__right">
-                    <div class="categories__right-top">
-                        <img class="image__right-top" src="img/CatRigTop.jpg" alt="CatRigTop">
-                        <div class="categori__text-right-top">
-                            <a target="_blank" href="#">
-                                <p>30% offer</p>
-                                <h2>women</h2>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="categories__right-bottom">
-                        <img class="image__right-bottom" src="img/CatRegBott.jpg" alt="CatRegBott">
-                        <div class="categori__text-right-bottom">
-                            <a target="_blank" href="#">
-                                <p>new arrivals</p>
-                                <h2>FOR kids</h2>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <section class="products">
-        <div class="container">
-            <div class="products__inner">
-                <header class="products__title">
-                    <h3>Fetured Items</h3>
-                    <p>Shop for items based on what we featured in this week</p>
-                </header>
-                <div class="products__box">
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod1.jpg" alt="prod1">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod2.jpg" alt="prod2">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod3.jpg" alt="prod3">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod4.jpg" alt="prod4">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod5.jpg" alt="prod5">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod6.jpg" alt="prod6">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod7.jpg" alt="prod7">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <a class="product__link" href="#">
-                                    <img class="prod__img" src="img/prod8.jpg" alt="prod8">
-                                    <div class="product__text">
-                                        <p class="products__item-text">Mango People T-shirt</p>
-                                        <p class="products__item-price">$52.00</p>
-                                    </div>
-                                </a>
-                                <div class="product__hover">
-                                    <a class="product__hover-link" href="#">
-                                        <img src="img/icon/card-add.svg" alt="card-add">
-                                        <p class="product__hover-text">Add to Cart</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="products__bottom-text">
-                    <div class="products__bottom-btn">
-                        <a target="_blank" class="bottom__button-prod" href="#">Browse All Product</a>
-                    </div>
+                <div class="arrivals__link">
+                    <a href="#">Home&nbsp;/</a>
+                    <a href="#">Men&nbsp;/</a>
+                    <a href="#">New&nbsp;Arrivals</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="conditions">
+    <section class="slider">
         <div class="container">
-            <div class="conditions__inner">
-                <div class="conditions__content">
-                    <div class="conditions__content-img">
-                        <img src="img/condition.jpg" alt="">
-                        <div class="conditions__content-text">
-                            <p>
-                                30% <span>OFFER</span>
-                            </p>
-                            <h3>
-                                FOR WOMEN
-                            </h3>
+            <div class="slider__inner">
+                <div class="slider__top">
+                    <img src="img/singl/topSingle.jpg" alt="topSingle">
+                </div>
+
+            </div>
+        </div>
+        <div class="slider__info">
+            <div class="container">
+                <div class="slider__info-inner">
+                    <div class="slider__info-text">
+                        <h3>WOMEN COLLECTION</h3>
+                        <div class="slider__info-redLine">
+                            <div class="slider__info-redLine-inner"></div>
+                        </div>
+                        <h2>Moschino Cheap And Chic</h2>
+                        <p class="slider__info-text-main">
+                            Compellingly actualize fully researched processes before proactive outsourcing.
+                            Progressively
+                            syndicate collaborative architectures before cutting-edge services. Completely visualize
+                            parallel core competencies rather than exceptional portals.
+                        </p>
+                        <div class="slider__info-material">
+                            <p>MATERIAL: <span>COTTON</span></p>
+                            <p>DESIGNER: <span>BINBURHAN</span></p>
+                        </div>
+                        <div class="slider__info-price">
+                            $ 25.789.516
+                        </div>
+
+                        <div class="slider__info-sizer">
+                            <div class="slider__info-sizer-inner">
+                                <h3>CHOOSE COLOR</h3>
+                                <details class="slider__info-color-details">
+                                    <summary class="slider__info-summary slider__info-summary-before">
+                                        Red
+                                    </summary>
+                                    <div class="slider__info-summary-color-list">
+                                        <ul>
+                                            <li class="slider__info-color">Orange</li>
+                                            <li class="slider__info-color">Yellow</li>
+                                            <li class="slider__info-color">Green</li>
+                                            <li class="slider__info-color">Light Blue</li>
+                                            <li class="slider__info-color">Blue</li>
+                                            <li class="slider__info-color">Purple</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="slider__info-sizer-inner">
+                                <h3>CHOOSE SIZE</h3>
+                                <details class="slider__info-color-details">
+                                    <summary class="slider__info-summary slider__info-summary-size">
+                                        XL
+                                    </summary>
+                                    <div class="slider__info-summary-color-list">
+                                        <ul>
+                                            <li class="slider__info-size">2XL</li>
+                                            <li class="slider__info-size">3XL</li>
+                                            <li class="slider__info-size">4XL</li>
+                                            <li class="slider__info-size">5XL</li>
+                                            <li class="slider__info-size">fat cow</li>
+                                            <li class="slider__info-size">Go to the doctor</li>
+                                        </ul>
+                                    </div>
+                                </details>
+                            </div>
+                            <div class="slider__info-sizer-inner">
+                                <h3>QUANTITY</h3>
+                                <form class="slider__info-form" name="test" method="post" action="input1.php">
+                                    <input class="slider__info-input" type="number" placeholder="2" size="40">
+                            </div>
+                        </div>
+                        <div class="slider__info-button">
+                            <button class="slider__info-btn" type="submit">
+                                <img src="img/icon/pynkCart.svg" alt="pynkCart">
+                                <p>Add to Cart</p>
+                            </button>
                         </div>
                     </div>
                 </div>
-                <div class="conditions__terms">
-                    <div class="conditions__terms-cont">
-                        <h4 class="term__title-1 term__title">
-                            Free Delivery
-                        </h4>
-                        <p>
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                            models.
-                        </p>
+
+
+
+            </div>
+
+
+        </div>
+    </section>
+    <section class="lookAt">
+        <div class="container">
+            <h2>you may like also</h2>
+            <div class="slider__products ">
+                <div class="products__item slider__var">
+                    <div class="product__content">
+                        <div class="products__img">
+                            <a class="product__link" href="#">
+                                <img class="prod__img" src="img/singl/w1.jpg" alt="prod3">
+                                <div class="product__text">
+                                    <p class="products__item-text">Mango People T-shirt</p>
+                                    <p class="products__item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="product__hover">
+                                <a class="product__hover-link" href="#">
+                                    <img src="img/icon/card-add.svg" alt="card-add">
+                                    <p class="product__hover-text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="conditions__terms-cont">
-                        <h4 class="term__title-2 term__title">
-                            Sales & discounts
-                        </h4>
-                        <p>
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                            models.
-                        </p>
+                </div>
+                <div class="products__item slider__var">
+                    <div class="product__content">
+                        <div class="products__img">
+                            <a class="product__link" href="#">
+                                <img class="prod__img" src="img/singl/w2.jpg" alt="prod3">
+                                <div class="product__text">
+                                    <p class="products__item-text">Mango People T-shirt</p>
+                                    <p class="products__item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="product__hover">
+                                <a class="product__hover-link" href="#">
+                                    <img src="img/icon/card-add.svg" alt="card-add">
+                                    <p class="product__hover-text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="conditions__terms-cont">
-                        <h4 class="term__title-3 term__title">
-                            Quality assurance
-                        </h4>
-                        <p>
-                            Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
-                            models.
-                        </p>
+                </div>
+                <div class="products__item slider__var">
+                    <div class="product__content">
+                        <div class="products__img">
+                            <a class="product__link" href="#">
+                                <img class="prod__img" src="img/singl/w3.jpg" alt="prod3">
+                                <div class="product__text">
+                                    <p class="products__item-text">Mango People T-shirt</p>
+                                    <p class="products__item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="product__hover">
+                                <a class="product__hover-link" href="#">
+                                    <img src="img/icon/card-add.svg" alt="card-add">
+                                    <p class="product__hover-text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="products__item slider__var">
+                    <div class="product__content">
+                        <div class="products__img">
+                            <a class="product__link" href="#">
+                                <img class="prod__img" src="img/singl/w4.jpg" alt="prod3">
+                                <div class="product__text">
+                                    <p class="products__item-text">Mango People T-shirt</p>
+                                    <p class="products__item-price">$52.00</p>
+                                </div>
+                            </a>
+                            <div class="product__hover">
+                                <a class="product__hover-link" href="#">
+                                    <img src="img/icon/card-add.svg" alt="card-add">
+                                    <p class="product__hover-text">Add to Cart</p>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
