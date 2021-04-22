@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Index</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -71,9 +72,92 @@
                 </div>
                 <div class="header__top-right">
                     <div class="shop__cart">
-                        <a href="shopping.html">
+                        <a href="#">
                             <img src="img/icon/basket.svg" alt="basket">
                         </a>
+
+                        <div class="cart__inner">
+                            <div class="cart__inner-item">
+                                <div class="cart__slide">
+                                    <div class="cart__slide-right">
+                                        <div class="cart__slide-img">
+                                            <a href="singlePage.html">
+                                                <img src="img/cartSlide1.jpg" alt="cartSlide1">
+                                            </a>
+                                        </div>
+                                        <div class="cart__slide-text">
+                                            <h5>Rebox Zane</h5>
+                                            <div class="cart__raitng">
+                                                <div class="cart__raitng-items">
+                                                    <input class="cart__raitng-item" id="cart__raitng-51"
+                                                        name="cart__raitng" type="radio" value="5">
+                                                    <label for="cart__raitng-51" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-41" checked
+                                                        name="cart__raitng" type="radio" value="4">
+                                                    <label for="cart__raitng-41" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-31"
+                                                        name="cart__raitng" type="radio" value="3">
+                                                    <label for="cart__raitng-31" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-21"
+                                                        name="cart__raitng" type="radio" value="2">
+                                                    <label for="cart__raitng-21" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-11"
+                                                        name="cart__raitng" type="radio" value="1">
+                                                    <label for="cart__raitng-11" class="cart__raitng-label"></label>
+                                                </div>
+                                            </div>
+                                            <p>1&#160;<span> x </span>&#160;$250</p>
+                                        </div>
+                                    </div>
+                                    <div class="cart__slide-cross">
+                                        <img src="img/icon/exit.jpg" alt="exit">
+                                    </div>
+                                </div>
+                                <div class="cart__slide">
+                                    <div class="cart__slide-right">
+                                        <div class="cart__slide-img">
+                                            <a href="singlePage.html">
+                                                <img src="img/cartSlide2.jpg" alt="cartSlide1">
+                                            </a>
+                                        </div>
+                                        <div class="cart__slide-text">
+                                            <h5>Rebox Zane</h5>
+                                            <div class="cart__raitng">
+                                                <div class="cart__raitng-items">
+                                                    <input class="cart__raitng-item" id="cart__raitng-5"
+                                                        name="cart__raitng" type="radio" value="5">
+                                                    <label for="cart__raitng-5" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-4" checked
+                                                        name="cart__raitng" type="radio" value="4">
+                                                    <label for="cart__raitng-4" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-3"
+                                                        name="cart__raitng" type="radio" value="3">
+                                                    <label for="cart__raitng-3" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-2"
+                                                        name="cart__raitng" type="radio" value="2">
+                                                    <label for="cart__raitng-2" class="cart__raitng-label"></label>
+                                                    <input class="cart__raitng-item" id="cart__raitng-1"
+                                                        name="cart__raitng" type="radio" value="1">
+                                                    <label for="cart__raitng-1" class="cart__raitng-label"></label>
+                                                </div>
+                                            </div>
+                                            <p>1&#160;<span> x </span>&#160;$250</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="cart__slide-cross">
+                                        <img src="img/icon/exit.jpg" alt="exit">
+                                    </div>
+                                </div>
+                                <div class="cart__slide-total-price">
+                                    <p>TOTAL</p>
+                                    <p>$500.00</p>
+                                </div>
+                                <a class="cart__slide-chckout cart__slide-link" href="#">Checkout</a>
+                                <a class="cart__slide-shopping cart__slide-link" href="shopping.html">Go to cart</a>
+                            </div>
+                        </div>
+
                     </div>
                     <div class="profile">
                         <a class="header__profile" href="#">My Account</a>
@@ -198,10 +282,10 @@
                             </div>
                         </li>
                         <li class="main__list menu__list-mar">
-                            <a target="_blank" class="munu__link" href="#">
+                            <a target="_blank" class="munu__link" href="singlePage.html">
                                 Women
                             </a>
-                            <div class="drop__menu">
+                            <div class="drop__menu drop__menu-women">
                                 <div class="drop__menu-inner">
                                     <h3 class="drop__title">
                                         Women
@@ -232,7 +316,7 @@
                                         Women
                                     </h3>
                                     <ul>
-                                        <li><a class="drop__menu-link" href="#">Dresses</a></li>
+                                        <li><a class="drop__menu-link" href="singlePage.html">Dresses</a></li>
                                         <li><a class="drop__menu-link" href="#">Tops</a></li>
                                         <li><a class="drop__menu-link" href="#">Sweaters/Knits</a></li>
                                     </ul>
@@ -310,8 +394,8 @@
                             </div>
                         </li>
                         <li class="main__list menu__list-mar">
-                            <a target="_blank" class="munu__link" href="#">
-                                Accoseriese
+                            <a target="_blank" class="munu__link" href="shopping.html">
+                                Shopping.html
                             </a>
                             <div class="drop__menu drop__menu-accoseriese">
                                 <div class="drop__menu-inner">
@@ -422,8 +506,8 @@
                             </div>
                         </li>
                         <li class="main__list menu__list-mar">
-                            <a target="_blank" class="munu__link" href="#">
-                                Hot Deals
+                            <a target="_blank" class="munu__link" href="singlePage.html">
+                                single page.html
                             </a>
                             <div class="drop__menu drop__menu-hot">
                                 <div class="drop__menu-inner">
@@ -505,43 +589,45 @@
         <div class="container">
             <div class="categories__inner">
                 <div class="catecories__left">
-                    <div class="catecories__left-top">
-                        <img class="image__left-top" src="img/CatLefTop.jpg" alt="CatLefTop">
-                        <div class="categori__text-left-top">
-                            <a target="_blank" href="#">
+                    <div class="catecories__left-top categories__img">
+                        <a href="singlePage.html" target="_blank">
+                            <img class="image__left-top" src="img/CatLefTop.jpg" alt="CatLefTop">
+                            <div class="categori__text-left-top">
+
                                 <p>hOT dEAL</p>
                                 <h2>FOR MEN</h2>
-                            </a>
-                        </div>
+
+                            </div>
+                        </a>
                     </div>
-                    <div class="catecories__left-bottom">
-                        <img class="image__left-bottom" src="img/CatLefBott.jpg" alt="CatLefBott">
-                        <div class="categori__text-left-bottom">
-                            <a target="_blank" href="#">
+                    <div class="catecories__left-bottom categories__img">
+                        <a href="singlePage.html" target="_blank">
+                            <img class="image__left-bottom" src="img/CatLefBott.jpg" alt="CatLefBott">
+                            <div class="categori__text-left-bottom">
                                 <p>LUXIROUS & trendy</p>
                                 <h2>ACCESORIES</h2>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="categories__right">
-                    <div class="categories__right-top">
-                        <img class="image__right-top" src="img/CatRigTop.jpg" alt="CatRigTop">
-                        <div class="categori__text-right-top">
-                            <a target="_blank" href="#">
+                    <div class="categories__right-top categories__img">
+                        <a href="singlePage.html" target="_blank">
+                            <img class="image__right-top" src="img/CatRigTop.jpg" alt="CatRigTop">
+                            <div class="categori__text-right-top">
                                 <p>30% offer</p>
                                 <h2>women</h2>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="categories__right-bottom">
-                        <img class="image__right-bottom" src="img/CatRegBott.jpg" alt="CatRegBott">
-                        <div class="categori__text-right-bottom">
-                            <a target="_blank" href="#">
+                    <div class="categories__right-bottom categories__img">
+                        <a href="singlePage.html" target="_blank">
+                            <img class="image__right-bottom" src="img/CatRegBott.jpg" alt="CatRegBott">
+                            <div class="categori__text-right-bottom">
                                 <p>new arrivals</p>
                                 <h2>FOR kids</h2>
-                            </a>
-                        </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -559,129 +645,154 @@
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod1.jpg" alt="prod1">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod1.jpg" alt="prod1">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
+
+                    </div>
+                    <div class="products__item">
+                        <div class="product__content">
+                            <div class="products__img">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod2.jpg" alt="prod2">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
+                                </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod2.jpg" alt="prod2">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod3.jpg" alt="prod3">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
                         </div>
                     </div>
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod3.jpg" alt="prod3">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod4.jpg" alt="prod4">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
                         </div>
                     </div>
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod4.jpg" alt="prod4">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod5.jpg" alt="prod5">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
                         </div>
                     </div>
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod5.jpg" alt="prod5">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod6.jpg" alt="prod6">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
                         </div>
                     </div>
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod6.jpg" alt="prod6">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod7.jpg" alt="prod7">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
                         </div>
                     </div>
                     <div class="products__item">
                         <div class="product__content">
                             <div class="products__img">
-                                <img class="prod__img" src="img/prod7.jpg" alt="prod7">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
+                                <a class="product__link" href="#">
+                                    <img class="prod__img" src="img/prod8.jpg" alt="prod8">
+                                    <div class="product__text">
+                                        <p class="products__item-text">Mango People T-shirt</p>
+                                        <p class="products__item-price">$52.00</p>
+                                    </div>
                                 </a>
+                                <div class="product__hover">
+                                    <a class="product__hover-link" href="#">
+                                        <img src="img/icon/card-add.svg" alt="card-add">
+                                        <p class="product__hover-text">Add to Cart</p>
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="product__content">
-                            <div class="products__img">
-                                <img class="prod__img" src="img/prod8.jpg" alt="prod8">
-                            </div>
-                            <div class="product__hover-img">
-                                <a target="_blank" class="product__link-img" href="#">
-                                    <img src="img/prodHov.png" alt="prodHov">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product__text">
-                            <a target="_blank" class="products__item-text" href="#">Mango People T-shirt</a>
-                            <a target="_blank" class="products__item-price" href="#">$52.00</a>
                         </div>
                     </div>
                 </div>
@@ -712,7 +823,7 @@
                 </div>
                 <div class="conditions__terms">
                     <div class="conditions__terms-cont">
-                        <h4 class="term__title-1">
+                        <h4 class="term__title-1 term__title">
                             Free Delivery
                         </h4>
                         <p>
@@ -721,8 +832,8 @@
                         </p>
                     </div>
                     <div class="conditions__terms-cont">
-                        <h4 class="term__title-2">
-                            Free Delivery
+                        <h4 class="term__title-2 term__title">
+                            Sales & discounts
                         </h4>
                         <p>
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
@@ -730,8 +841,8 @@
                         </p>
                     </div>
                     <div class="conditions__terms-cont">
-                        <h4 class="term__title-3">
-                            Free Delivery
+                        <h4 class="term__title-3 term__title">
+                            Quality assurance
                         </h4>
                         <p>
                             Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
@@ -869,6 +980,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 
