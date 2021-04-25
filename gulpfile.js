@@ -12,6 +12,7 @@ gulp.task('sass', function(){
         .pipe(sass({outputStyle: 'compressed'}))
         .pipe(rename({suffix : '.min'}))
         .pipe(autoprefixer({
+            grid: true,
             overrideBrowserslist: ['last 8 versions']
         }))
         .pipe(gulp.dest('app/css'))
