@@ -489,6 +489,11 @@ ul {
 }
 .drop__list-img{
     margin-top: 22px;
+    transition: all .3s ease;
+    &:hover{
+        transform: scale(1.1, 1.1);
+        box-shadow: 0px 0px 10px 0px $mainColor;
+    }
 }
 
 
