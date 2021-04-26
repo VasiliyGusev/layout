@@ -723,6 +723,7 @@ Start conditions */
 
 .conditions{
     margin-top: 113px;
+    margin-bottom: 98px;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -808,7 +809,7 @@ Start conditions */
 Start subscribe */
 
 .subscribe{
-    margin-top: 98px;
+    // margin-top: 98px;
     // height: 440px;
     height: 100%;
     background-image: url(../img/subscribe.jpg);
@@ -1143,6 +1144,9 @@ Start Shipping */
 
 .shipping{
     margin-top: 44px;
+    &__inner{
+        margin-bottom: 98px;
+    }
     &__top{
         display: flex;
         justify-content: space-between;
@@ -1564,7 +1568,9 @@ Start Shipping */
 // End Single Page
 // Start Checkout
 
-
+.adress__inner{
+    margin-bottom: 98px;
+}
 .shipping__adress{
     &-inner{
         display: flex;
@@ -1910,20 +1916,95 @@ Start Shipping */
             
         }
         &-filter{
+            margin-top: 40px;
             background-color: #f3f3f3;
-            height: 50px;
-            // &-sum{
+            &-inners{
+                display: flex;
+            }
+            &-inner{
+                align-items: center;
+                display: flex;
+                & p{
+                    display: inline-block;
+                    margin-left: 12px;
+                    background-color: #fff;
+                    font-size: 14px;
+                    padding: 5px 10px;
+                    // line-height: 26px;
+                    font-weight: 700;
+                    border-right: 2px solid #f3f3f3;
+                    color: #6f6e6e;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+            }
+            &-sum{
+                display: block;
+                outline: none;
+                margin: 12px 0;
+                cursor: pointer;
+                display: inline-block;
+                padding: 5px 40px 5px 10px;
+                background-color: #fff;
+                position: relative;
+                align-items: center;
+                & h2{
+                    // padding: 12px;
+                    font-size: 14px;
+                    // line-height: 26px;
+                    font-weight: 700;
+                    color: #6f6e6e;
+                    transition: all .3s ease;
+                    &:hover{
+                        color: $mainColor;
+                    }
+                }
+                &::-webkit-details-marker {
+                    display: none;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    background-image: url(../img/product/arrow_niz_grey.png);
+                    transform: rotate(137deg);
+                    height: 6px;
+                    width: 5px;
+                    right: 10px;
+                    top: 10px;
+                    background-repeat: no-repeat;
+                }
+            }
+            &-det{
+                align-items: center;
+                z-index: 1;
+            }
+            &-det[open] > summary::after {
+                content: '';
+                position: absolute;
+                background-image: url(../img/product/arrow_ap_pinc.png);
+                transform: rotate(226deg);
+                height: 6px;
+                width: 5px;
+                right: 10px;
+                top: 10px;
+                background-repeat: no-repeat;
+            }
+            // &-sum2{
             //     display: block;
-            //     border-bottom: 1px solid #ccc;
-            //     border-left: 5px solid $mainColor;
             //     outline: none;
+            //     margin: 12px 0;
             //     cursor: pointer;
+            //     display: inline-block;
+            //     padding: 5px 40px 5px 10px;
+            //     background-color: #fff;
             //     position: relative;
+            //     align-items: center;
             //     & h2{
-            //         padding: 12px;
-            //         text-transform: uppercase;
+            //         // padding: 12px;
             //         font-size: 14px;
-            //         line-height: 20px;
+            //         // line-height: 26px;
             //         font-weight: 700;
             //         color: #6f6e6e;
             //         transition: all .3s ease;
@@ -1942,11 +2023,15 @@ Start Shipping */
             //         height: 6px;
             //         width: 5px;
             //         right: 10px;
-            //         top: 15px;
+            //         top: 10px;
             //         background-repeat: no-repeat;
             //     }
             // }
-            // &-det[open] > summary::after {
+            // &-det2{
+            //     align-items: center;
+            //     z-index: 1;
+            // }
+            // &-det2[open] > summary::after {
             //     content: '';
             //     position: absolute;
             //     background-image: url(../img/product/arrow_ap_pinc.png);
@@ -1954,17 +2039,70 @@ Start Shipping */
             //     height: 6px;
             //     width: 5px;
             //     right: 10px;
-            //     top: 17px;
+            //     top: 10px;
             //     background-repeat: no-repeat;
-            // }
-            // &-det[open] h2{
-            //     color: $mainColor;
-                
             // }
         }
     }
     
     &__products{
         grid-area: 2/4/8/13;
+        &-bottom{
+            display: flex;
+            justify-content: space-between;
+            & a{
+                display: inline-block;
+                margin: 5px 10px;
+                font-size: 16px;
+                line-height: 26px;
+                color: #a09e9e;
+                &:hover{
+                    color: $mainColor;
+                }
+            }
+        }
+    }
+}
+.page-list{
+    border: 1px solid #c2c0c0;
+    &:hover{
+        border: 1px solid $mainColor;
+    }
+}
+.page-all{
+    border: 1px solid #c2c0c0;
+    & a{
+        margin: 0;
+        padding: 5px 30px;
+    }
+    &:hover{
+        border: 1px solid $mainColor;
+    }
+}
+
+.conditions{
+    background-color: #414040;
+    &__product{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        &-cont{
+            text-align: center;
+            color: #fff;
+            padding: 0 40px;
+            & img{
+                margin-top: 88px;
+            }
+            & h4{
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 20px;
+            }
+            & p{
+                font-size: 13px;
+                line-height: 23px;
+                margin-top: 15px;
+                margin-bottom: 110px;
+            }
+        }
     }
 }
