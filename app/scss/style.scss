@@ -1924,13 +1924,14 @@ Start Shipping */
             &-inner{
                 align-items: center;
                 display: flex;
+                position: relative;
+                transition: all .3s ease;
                 & p{
                     display: inline-block;
                     margin-left: 12px;
                     background-color: #fff;
                     font-size: 14px;
                     padding: 5px 10px;
-                    // line-height: 26px;
                     font-weight: 700;
                     border-right: 2px solid #f3f3f3;
                     color: #6f6e6e;
@@ -1948,12 +1949,9 @@ Start Shipping */
                 display: inline-block;
                 padding: 5px 40px 5px 10px;
                 background-color: #fff;
-                position: relative;
                 align-items: center;
                 & h2{
-                    // padding: 12px;
                     font-size: 14px;
-                    // line-height: 26px;
                     font-weight: 700;
                     color: #6f6e6e;
                     transition: all .3s ease;
@@ -1972,7 +1970,7 @@ Start Shipping */
                     height: 6px;
                     width: 5px;
                     right: 10px;
-                    top: 10px;
+                    top: 21px;
                     background-repeat: no-repeat;
                 }
             }
@@ -1988,60 +1986,31 @@ Start Shipping */
                 height: 6px;
                 width: 5px;
                 right: 10px;
-                top: 10px;
+                top: 21px;
                 background-repeat: no-repeat;
             }
-            // &-sum2{
-            //     display: block;
-            //     outline: none;
-            //     margin: 12px 0;
-            //     cursor: pointer;
-            //     display: inline-block;
-            //     padding: 5px 40px 5px 10px;
-            //     background-color: #fff;
-            //     position: relative;
-            //     align-items: center;
-            //     & h2{
-            //         // padding: 12px;
-            //         font-size: 14px;
-            //         // line-height: 26px;
-            //         font-weight: 700;
-            //         color: #6f6e6e;
-            //         transition: all .3s ease;
-            //         &:hover{
-            //             color: $mainColor;
-            //         }
-            //     }
-            //     &::-webkit-details-marker {
-            //         display: none;
-            //     }
-            //     &::after {
-            //         content: '';
-            //         position: absolute;
-            //         background-image: url(../img/product/arrow_niz_grey.png);
-            //         transform: rotate(137deg);
-            //         height: 6px;
-            //         width: 5px;
-            //         right: 10px;
-            //         top: 10px;
-            //         background-repeat: no-repeat;
-            //     }
-            // }
-            // &-det2{
-            //     align-items: center;
-            //     z-index: 1;
-            // }
-            // &-det2[open] > summary::after {
-            //     content: '';
-            //     position: absolute;
-            //     background-image: url(../img/product/arrow_ap_pinc.png);
-            //     transform: rotate(226deg);
-            //     height: 6px;
-            //     width: 5px;
-            //     right: 10px;
-            //     top: 10px;
-            //     background-repeat: no-repeat;
-            // }
+            &-list{
+                position: absolute;
+                background-color: #fff;
+                & ul{
+                    margin: 0;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    width: 165px;
+                    & li{
+                        & a{
+                            margin: 0;
+                            padding: 0 10px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &-list2{
+                & ul{
+                    width: 50px;
+                }
+            }
         }
     }
     
